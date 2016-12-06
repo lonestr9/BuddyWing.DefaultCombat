@@ -19,7 +19,6 @@ namespace DefaultCombat.Routines
 			get
 			{
 				return new PrioritySelector(
-					Spell.Buff("Dark Charge"),
 					Spell.Buff("Mark of Power"),
 					Spell.Cast("Guard", on => Me.Companion,
 						ret => Me.Companion != null && !Me.Companion.IsDead && !Me.Companion.HasBuff("Guard")),
